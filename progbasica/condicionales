@@ -1,0 +1,44 @@
+let lacteos = {
+    "leche" : [
+        {
+        "tipoLeche" : "Entera",
+        "kcal" : 132,
+        "volumetria" : 1
+        },
+        {
+        "tipoLeche" : "Deslactosada",
+        "kcal" : 188,
+        "volumetria" : 1.2
+        }
+    ],
+    "Quesos" : [
+        {
+        "tipoQueso" : "Panela",
+        "marca" : "Lala",
+        "grasasTotales" : 55,
+        "gramajeDisponible" : [100,250,1000]
+        },
+        {
+        "tipoQueso" : "Oaxaca",
+        "marca" : "LaVillita",
+        "grasasTotales" : 99,
+        "gramajeDisponible" : [100]
+        }
+    ]
+} ;
+
+lacteos.leche.forEach( function(lecheActual,index){
+    if(lecheActual.tipoLeche == 'Entera'){
+        console.log('La leche es entera y se encuentra en el indice del arreglo: ' + index);
+    } else {
+        console.log('Esta no es una leche entera');
+    }
+} );
+
+console.log(lacteos.Quesos[1].marca);
+console.log(lacteos.leche[1].volumetria);
+
+console.log(lacteos.Quesos[0].gramajeDisponible[0]);
+console.log(lacteos.Quesos[0].gramajeDisponible[1]);
+console.log(lacteos.Quesos[0].gramajeDisponible[2]);
+console.log(lacteos.Quesos[1].gramajeDisponible[0]);
