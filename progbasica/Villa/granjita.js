@@ -1,6 +1,7 @@
 var vm =document.getElementById("villamich");
 var papel = vm.getContext("2d");
 document.addEventListener("keydown", moverLobo);
+alert('Que pedo, estoy modificando tu proyecto jiji');
 
 var xLobo = 150;
 var yLobo = 100;
